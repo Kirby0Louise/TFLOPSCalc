@@ -1,0 +1,11 @@
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Debug\TFLOPSCalc.exe.config
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Debug\TFLOPSCalc.exe
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Debug\TFLOPSCalc.pdb
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Debug\TFLOPSCalc.xml
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.vbprojAssemblyReference.cache
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.frmMain.resources
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.Resources.resources
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.vbproj.GenerateResource.cache
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.exe
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.xml
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Debug\TFLOPSCalc.pdb
