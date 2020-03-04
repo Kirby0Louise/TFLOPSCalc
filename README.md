@@ -13,6 +13,11 @@ v 1.0
 Initial Release
 
 
+
+v 1.1
+
+Fixed a bug with the compute not updating when changing uarch
+
 # TODO:
 
 Finish other tabs
