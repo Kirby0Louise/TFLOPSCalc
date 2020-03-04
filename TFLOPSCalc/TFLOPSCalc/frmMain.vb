@@ -65,6 +65,9 @@
                 currentUarch = CalcCompute.uarches.Intelgen11
                 lblStep2.Text = "Step 2:  Enter number of EUs"
         End Select
+
+        lblTFLOPS.Text = CalcCompute.calculateCompute(currentUarch, nudComputeUnits.Value, tbClockSpeed.Value, False) & "TFLOPS"
+        lblGFLOPS.Text = CalcCompute.calculateCompute(currentUarch, nudComputeUnits.Value, tbClockSpeed.Value, True) & "GFLOPS"
     End Sub
 
     Private Sub llTwitter_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llTwitter.LinkClicked
