@@ -18,6 +18,12 @@ v 1.1
 
 Fixed a bug with the compute not updating when changing uarch
 
+
+
+v 1.2
+
+Added in unknown clock and unknown CU/SM/EU calculators
+
 # TODO:
 
 Finish other tabs
