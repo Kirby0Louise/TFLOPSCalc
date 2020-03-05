@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>RX 5700XT small.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -128,6 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\louise chibi12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="louise pentacle.ico" />
+    <Content Include="RX 5700XT small.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

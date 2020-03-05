@@ -37,8 +37,8 @@ Partial Class frmMain
         Me.lblStep2 = New System.Windows.Forms.Label()
         Me.cbUarch = New System.Windows.Forms.ComboBox()
         Me.lblStep1 = New System.Windows.Forms.Label()
-        Me.tpKnowCU = New System.Windows.Forms.TabPage()
-        Me.tpKnowClock = New System.Windows.Forms.TabPage()
+        Me.tpUnknownClock = New System.Windows.Forms.TabPage()
+        Me.tpUnknownCU = New System.Windows.Forms.TabPage()
         Me.tpKnowCompute = New System.Windows.Forms.TabPage()
         Me.tpAbout = New System.Windows.Forms.TabPage()
         Me.llTFLOPSRepo = New System.Windows.Forms.LinkLabel()
@@ -47,20 +47,45 @@ Partial Class frmMain
         Me.llTwitter = New System.Windows.Forms.LinkLabel()
         Me.pcKirby = New System.Windows.Forms.PictureBox()
         Me.lblAbout = New System.Windows.Forms.Label()
+        Me.nudComputeUnitsa = New System.Windows.Forms.NumericUpDown()
+        Me.lblStep3a = New System.Windows.Forms.Label()
+        Me.txtCompute = New System.Windows.Forms.TextBox()
+        Me.lblReqClock = New System.Windows.Forms.Label()
+        Me.lblResulta = New System.Windows.Forms.Label()
+        Me.lblTFLOPSa = New System.Windows.Forms.Label()
+        Me.lblStep1a = New System.Windows.Forms.Label()
+        Me.cbUarcha = New System.Windows.Forms.ComboBox()
+        Me.lblStep2a = New System.Windows.Forms.Label()
+        Me.lblStep2b = New System.Windows.Forms.Label()
+        Me.cbUarchb = New System.Windows.Forms.ComboBox()
+        Me.lblStep1b = New System.Windows.Forms.Label()
+        Me.lblClockb = New System.Windows.Forms.Label()
+        Me.lbl5KMHzb = New System.Windows.Forms.Label()
+        Me.lbl1MHzb = New System.Windows.Forms.Label()
+        Me.tbClockSpeedb = New System.Windows.Forms.TrackBar()
+        Me.lblTFLOPSb = New System.Windows.Forms.Label()
+        Me.lblReqCU = New System.Windows.Forms.Label()
+        Me.lblResultb = New System.Windows.Forms.Label()
+        Me.txtComputeb = New System.Windows.Forms.TextBox()
+        Me.lblStep3b = New System.Windows.Forms.Label()
         Me.tcMain.SuspendLayout()
         Me.tpCalculator.SuspendLayout()
         CType(Me.tbClockSpeed, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nudComputeUnits, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpUnknownClock.SuspendLayout()
+        Me.tpUnknownCU.SuspendLayout()
         Me.tpAbout.SuspendLayout()
         CType(Me.pbLouise, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pcKirby, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudComputeUnitsa, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbClockSpeedb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tcMain
         '
         Me.tcMain.Controls.Add(Me.tpCalculator)
-        Me.tcMain.Controls.Add(Me.tpKnowCU)
-        Me.tcMain.Controls.Add(Me.tpKnowClock)
+        Me.tcMain.Controls.Add(Me.tpUnknownClock)
+        Me.tcMain.Controls.Add(Me.tpUnknownCU)
         Me.tcMain.Controls.Add(Me.tpKnowCompute)
         Me.tcMain.Controls.Add(Me.tpAbout)
         Me.tcMain.Location = New System.Drawing.Point(12, 12)
@@ -206,24 +231,45 @@ Partial Class frmMain
         Me.lblStep1.TabIndex = 0
         Me.lblStep1.Text = "Step 1:  Choose microarchitecture (μarch)"
         '
-        'tpKnowCU
+        'tpUnknownClock
         '
-        Me.tpKnowCU.Location = New System.Drawing.Point(4, 22)
-        Me.tpKnowCU.Name = "tpKnowCU"
-        Me.tpKnowCU.Size = New System.Drawing.Size(852, 446)
-        Me.tpKnowCU.TabIndex = 3
-        Me.tpKnowCU.Text = "Known # of CU/SM/EU"
-        Me.tpKnowCU.UseVisualStyleBackColor = True
+        Me.tpUnknownClock.Controls.Add(Me.lblTFLOPSa)
+        Me.tpUnknownClock.Controls.Add(Me.lblReqClock)
+        Me.tpUnknownClock.Controls.Add(Me.lblResulta)
+        Me.tpUnknownClock.Controls.Add(Me.txtCompute)
+        Me.tpUnknownClock.Controls.Add(Me.lblStep3a)
+        Me.tpUnknownClock.Controls.Add(Me.nudComputeUnitsa)
+        Me.tpUnknownClock.Controls.Add(Me.lblStep2a)
+        Me.tpUnknownClock.Controls.Add(Me.cbUarcha)
+        Me.tpUnknownClock.Controls.Add(Me.lblStep1a)
+        Me.tpUnknownClock.Location = New System.Drawing.Point(4, 22)
+        Me.tpUnknownClock.Name = "tpUnknownClock"
+        Me.tpUnknownClock.Size = New System.Drawing.Size(852, 446)
+        Me.tpUnknownClock.TabIndex = 3
+        Me.tpUnknownClock.Text = "Unknown Clock"
+        Me.tpUnknownClock.UseVisualStyleBackColor = True
         '
-        'tpKnowClock
+        'tpUnknownCU
         '
-        Me.tpKnowClock.Location = New System.Drawing.Point(4, 22)
-        Me.tpKnowClock.Name = "tpKnowClock"
-        Me.tpKnowClock.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpKnowClock.Size = New System.Drawing.Size(852, 446)
-        Me.tpKnowClock.TabIndex = 1
-        Me.tpKnowClock.Text = "Known Clock Speed"
-        Me.tpKnowClock.UseVisualStyleBackColor = True
+        Me.tpUnknownCU.Controls.Add(Me.lblTFLOPSb)
+        Me.tpUnknownCU.Controls.Add(Me.lblReqCU)
+        Me.tpUnknownCU.Controls.Add(Me.lblResultb)
+        Me.tpUnknownCU.Controls.Add(Me.txtComputeb)
+        Me.tpUnknownCU.Controls.Add(Me.lblStep3b)
+        Me.tpUnknownCU.Controls.Add(Me.lblClockb)
+        Me.tpUnknownCU.Controls.Add(Me.lbl5KMHzb)
+        Me.tpUnknownCU.Controls.Add(Me.lbl1MHzb)
+        Me.tpUnknownCU.Controls.Add(Me.tbClockSpeedb)
+        Me.tpUnknownCU.Controls.Add(Me.lblStep2b)
+        Me.tpUnknownCU.Controls.Add(Me.cbUarchb)
+        Me.tpUnknownCU.Controls.Add(Me.lblStep1b)
+        Me.tpUnknownCU.Location = New System.Drawing.Point(4, 22)
+        Me.tpUnknownCU.Name = "tpUnknownCU"
+        Me.tpUnknownCU.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpUnknownCU.Size = New System.Drawing.Size(852, 446)
+        Me.tpUnknownCU.TabIndex = 1
+        Me.tpUnknownCU.Text = "Unknown # of CU/SM/EU"
+        Me.tpUnknownCU.UseVisualStyleBackColor = True
         '
         'tpKnowCompute
         '
@@ -311,6 +357,202 @@ Partial Class frmMain
         Me.lblAbout.TabIndex = 0
         Me.lblAbout.Text = resources.GetString("lblAbout.Text")
         '
+        'nudComputeUnitsa
+        '
+        Me.nudComputeUnitsa.Location = New System.Drawing.Point(6, 114)
+        Me.nudComputeUnitsa.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.nudComputeUnitsa.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nudComputeUnitsa.Name = "nudComputeUnitsa"
+        Me.nudComputeUnitsa.Size = New System.Drawing.Size(67, 20)
+        Me.nudComputeUnitsa.TabIndex = 7
+        Me.nudComputeUnitsa.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'lblStep3a
+        '
+        Me.lblStep3a.AutoSize = True
+        Me.lblStep3a.Location = New System.Drawing.Point(6, 152)
+        Me.lblStep3a.Name = "lblStep3a"
+        Me.lblStep3a.Size = New System.Drawing.Size(117, 13)
+        Me.lblStep3a.TabIndex = 8
+        Me.lblStep3a.Text = "Step 3:  Enter Compute"
+        '
+        'txtCompute
+        '
+        Me.txtCompute.Location = New System.Drawing.Point(6, 195)
+        Me.txtCompute.Name = "txtCompute"
+        Me.txtCompute.Size = New System.Drawing.Size(100, 20)
+        Me.txtCompute.TabIndex = 9
+        Me.txtCompute.Text = "0.0"
+        '
+        'lblReqClock
+        '
+        Me.lblReqClock.AutoSize = True
+        Me.lblReqClock.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReqClock.Location = New System.Drawing.Point(4, 299)
+        Me.lblReqClock.Name = "lblReqClock"
+        Me.lblReqClock.Size = New System.Drawing.Size(97, 31)
+        Me.lblReqClock.TabIndex = 11
+        Me.lblReqClock.Text = "0 MHz"
+        '
+        'lblResulta
+        '
+        Me.lblResulta.AutoSize = True
+        Me.lblResulta.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResulta.Location = New System.Drawing.Point(4, 265)
+        Me.lblResulta.Name = "lblResulta"
+        Me.lblResulta.Size = New System.Drawing.Size(79, 25)
+        Me.lblResulta.TabIndex = 10
+        Me.lblResulta.Text = "Result:"
+        '
+        'lblTFLOPSa
+        '
+        Me.lblTFLOPSa.AutoSize = True
+        Me.lblTFLOPSa.Location = New System.Drawing.Point(119, 199)
+        Me.lblTFLOPSa.Name = "lblTFLOPSa"
+        Me.lblTFLOPSa.Size = New System.Drawing.Size(48, 13)
+        Me.lblTFLOPSa.TabIndex = 12
+        Me.lblTFLOPSa.Text = "TFLOPS"
+        '
+        'lblStep1a
+        '
+        Me.lblStep1a.AutoSize = True
+        Me.lblStep1a.Location = New System.Drawing.Point(6, 15)
+        Me.lblStep1a.Name = "lblStep1a"
+        Me.lblStep1a.Size = New System.Drawing.Size(203, 13)
+        Me.lblStep1a.TabIndex = 4
+        Me.lblStep1a.Text = "Step 1:  Choose microarchitecture (μarch)"
+        '
+        'cbUarcha
+        '
+        Me.cbUarcha.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbUarcha.FormattingEnabled = True
+        Me.cbUarcha.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11"})
+        Me.cbUarcha.Location = New System.Drawing.Point(6, 41)
+        Me.cbUarcha.Name = "cbUarcha"
+        Me.cbUarcha.Size = New System.Drawing.Size(121, 21)
+        Me.cbUarcha.TabIndex = 5
+        '
+        'lblStep2a
+        '
+        Me.lblStep2a.AutoSize = True
+        Me.lblStep2a.Location = New System.Drawing.Point(6, 84)
+        Me.lblStep2a.Name = "lblStep2a"
+        Me.lblStep2a.Size = New System.Drawing.Size(146, 13)
+        Me.lblStep2a.TabIndex = 6
+        Me.lblStep2a.Text = "Step 2:  Enter number of SMs"
+        '
+        'lblStep2b
+        '
+        Me.lblStep2b.AutoSize = True
+        Me.lblStep2b.Location = New System.Drawing.Point(6, 84)
+        Me.lblStep2b.Name = "lblStep2b"
+        Me.lblStep2b.Size = New System.Drawing.Size(133, 13)
+        Me.lblStep2b.TabIndex = 9
+        Me.lblStep2b.Text = "Step 2:  Enter clock speed"
+        '
+        'cbUarchb
+        '
+        Me.cbUarchb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbUarchb.FormattingEnabled = True
+        Me.cbUarchb.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11"})
+        Me.cbUarchb.Location = New System.Drawing.Point(6, 41)
+        Me.cbUarchb.Name = "cbUarchb"
+        Me.cbUarchb.Size = New System.Drawing.Size(121, 21)
+        Me.cbUarchb.TabIndex = 8
+        '
+        'lblStep1b
+        '
+        Me.lblStep1b.AutoSize = True
+        Me.lblStep1b.Location = New System.Drawing.Point(6, 15)
+        Me.lblStep1b.Name = "lblStep1b"
+        Me.lblStep1b.Size = New System.Drawing.Size(203, 13)
+        Me.lblStep1b.TabIndex = 7
+        Me.lblStep1b.Text = "Step 1:  Choose microarchitecture (μarch)"
+        '
+        'lblClockb
+        '
+        Me.lblClockb.AutoSize = True
+        Me.lblClockb.Location = New System.Drawing.Point(0, 198)
+        Me.lblClockb.Name = "lblClockb"
+        Me.lblClockb.Size = New System.Drawing.Size(105, 13)
+        Me.lblClockb.TabIndex = 16
+        Me.lblClockb.Text = "Clock Speed: 1 MHz"
+        '
+        'lbl5KMHzb
+        '
+        Me.lbl5KMHzb.AutoSize = True
+        Me.lbl5KMHzb.Location = New System.Drawing.Point(781, 158)
+        Me.lbl5KMHzb.Name = "lbl5KMHzb"
+        Me.lbl5KMHzb.Size = New System.Drawing.Size(56, 13)
+        Me.lbl5KMHzb.TabIndex = 15
+        Me.lbl5KMHzb.Text = "5000 MHz"
+        '
+        'lbl1MHzb
+        '
+        Me.lbl1MHzb.AutoSize = True
+        Me.lbl1MHzb.Location = New System.Drawing.Point(0, 158)
+        Me.lbl1MHzb.Name = "lbl1MHzb"
+        Me.lbl1MHzb.Size = New System.Drawing.Size(38, 13)
+        Me.lbl1MHzb.TabIndex = 14
+        Me.lbl1MHzb.Text = "1 MHz"
+        '
+        'tbClockSpeedb
+        '
+        Me.tbClockSpeedb.Location = New System.Drawing.Point(3, 110)
+        Me.tbClockSpeedb.Maximum = 5000
+        Me.tbClockSpeedb.Minimum = 1
+        Me.tbClockSpeedb.Name = "tbClockSpeedb"
+        Me.tbClockSpeedb.Size = New System.Drawing.Size(834, 45)
+        Me.tbClockSpeedb.TabIndex = 13
+        Me.tbClockSpeedb.TickStyle = System.Windows.Forms.TickStyle.None
+        Me.tbClockSpeedb.Value = 1
+        '
+        'lblTFLOPSb
+        '
+        Me.lblTFLOPSb.AutoSize = True
+        Me.lblTFLOPSb.Location = New System.Drawing.Point(116, 285)
+        Me.lblTFLOPSb.Name = "lblTFLOPSb"
+        Me.lblTFLOPSb.Size = New System.Drawing.Size(48, 13)
+        Me.lblTFLOPSb.TabIndex = 21
+        Me.lblTFLOPSb.Text = "TFLOPS"
+        '
+        'lblReqCU
+        '
+        Me.lblReqCU.AutoSize = True
+        Me.lblReqCU.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblReqCU.Location = New System.Drawing.Point(1, 385)
+        Me.lblReqCU.Name = "lblReqCU"
+        Me.lblReqCU.Size = New System.Drawing.Size(95, 31)
+        Me.lblReqCU.TabIndex = 20
+        Me.lblReqCU.Text = "0 SMs"
+        '
+        'lblResultb
+        '
+        Me.lblResultb.AutoSize = True
+        Me.lblResultb.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResultb.Location = New System.Drawing.Point(1, 351)
+        Me.lblResultb.Name = "lblResultb"
+        Me.lblResultb.Size = New System.Drawing.Size(79, 25)
+        Me.lblResultb.TabIndex = 19
+        Me.lblResultb.Text = "Result:"
+        '
+        'txtComputeb
+        '
+        Me.txtComputeb.Location = New System.Drawing.Point(3, 281)
+        Me.txtComputeb.Name = "txtComputeb"
+        Me.txtComputeb.Size = New System.Drawing.Size(100, 20)
+        Me.txtComputeb.TabIndex = 18
+        Me.txtComputeb.Text = "0.0"
+        '
+        'lblStep3b
+        '
+        Me.lblStep3b.AutoSize = True
+        Me.lblStep3b.Location = New System.Drawing.Point(3, 238)
+        Me.lblStep3b.Name = "lblStep3b"
+        Me.lblStep3b.Size = New System.Drawing.Size(117, 13)
+        Me.lblStep3b.TabIndex = 17
+        Me.lblStep3b.Text = "Step 3:  Enter Compute"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -325,17 +567,23 @@ Partial Class frmMain
         Me.tpCalculator.PerformLayout()
         CType(Me.tbClockSpeed, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.nudComputeUnits, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpUnknownClock.ResumeLayout(False)
+        Me.tpUnknownClock.PerformLayout()
+        Me.tpUnknownCU.ResumeLayout(False)
+        Me.tpUnknownCU.PerformLayout()
         Me.tpAbout.ResumeLayout(False)
         Me.tpAbout.PerformLayout()
         CType(Me.pbLouise, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pcKirby, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudComputeUnitsa, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbClockSpeedb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents tcMain As TabControl
     Friend WithEvents tpCalculator As TabPage
-    Friend WithEvents tpKnowClock As TabPage
+    Friend WithEvents tpUnknownCU As TabPage
     Friend WithEvents tpKnowCompute As TabPage
     Friend WithEvents lblStep1 As Label
     Friend WithEvents cbUarch As ComboBox
@@ -349,7 +597,7 @@ Partial Class frmMain
     Friend WithEvents lbl5kMHz As Label
     Friend WithEvents lbl1MHz As Label
     Friend WithEvents lblClock As Label
-    Friend WithEvents tpKnowCU As TabPage
+    Friend WithEvents tpUnknownClock As TabPage
     Friend WithEvents tpAbout As TabPage
     Friend WithEvents lblAbout As Label
     Friend WithEvents pcKirby As PictureBox
@@ -357,4 +605,25 @@ Partial Class frmMain
     Friend WithEvents pbLouise As PictureBox
     Friend WithEvents llTFLOPSRepo As LinkLabel
     Friend WithEvents llMyGithub As LinkLabel
+    Friend WithEvents nudComputeUnitsa As NumericUpDown
+    Friend WithEvents lblStep3a As Label
+    Friend WithEvents txtCompute As TextBox
+    Friend WithEvents lblReqClock As Label
+    Friend WithEvents lblResulta As Label
+    Friend WithEvents lblTFLOPSa As Label
+    Friend WithEvents lblStep2a As Label
+    Friend WithEvents cbUarcha As ComboBox
+    Friend WithEvents lblStep1a As Label
+    Friend WithEvents lblStep2b As Label
+    Friend WithEvents cbUarchb As ComboBox
+    Friend WithEvents lblStep1b As Label
+    Friend WithEvents lblClockb As Label
+    Friend WithEvents lbl5KMHzb As Label
+    Friend WithEvents lbl1MHzb As Label
+    Friend WithEvents tbClockSpeedb As TrackBar
+    Friend WithEvents lblTFLOPSb As Label
+    Friend WithEvents lblReqCU As Label
+    Friend WithEvents lblResultb As Label
+    Friend WithEvents txtComputeb As TextBox
+    Friend WithEvents lblStep3b As Label
 End Class

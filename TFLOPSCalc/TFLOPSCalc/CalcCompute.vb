@@ -13,6 +13,14 @@
 
     End Function
 
+    Public Shared Function findReqClock(ByVal uarch As uarches, ByVal computeUnits As Integer, ByVal compute As Single) As Integer
+        Return Integer.Parse(Math.Ceiling(compute / (computeUnits * getShadersForUarch(uarch) * 2) * 1000000))
+    End Function
+
+    Public Shared Function findReqCUs(ByVal uarch As uarches, ByVal clock As Integer, ByVal compute As Single) As Integer
+        Return Integer.Parse(Math.Ceiling(compute / ((clock / 1000) * 2 * getShadersForUarch(uarch)) * 1000))
+    End Function
+
     Public Shared Function getShadersForUarch(ByVal uarch As uarches) As Integer
         Select Case uarch
             Case uarches.NvidiaFermi
