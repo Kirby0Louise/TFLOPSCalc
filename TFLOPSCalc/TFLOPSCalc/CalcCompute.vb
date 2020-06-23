@@ -14,10 +14,16 @@
     End Function
 
     Public Shared Function findReqClock(ByVal uarch As uarches, ByVal computeUnits As Integer, ByVal compute As Single) As Integer
+        If computeUnits = 0 Then
+            computeUnits = 1
+        End If
         Return Integer.Parse(Math.Ceiling(compute / (computeUnits * getShadersForUarch(uarch) * 2) * 1000000))
     End Function
 
     Public Shared Function findReqCUs(ByVal uarch As uarches, ByVal clock As Integer, ByVal compute As Single) As Integer
+        If clock = 0 Then
+            clock = 1
+        End If
         Return Integer.Parse(Math.Ceiling(compute / ((clock / 1000) * 2 * getShadersForUarch(uarch)) * 1000))
     End Function
 
@@ -32,6 +38,8 @@
             Case uarches.NvidiaPascal
                 Return 128
             Case uarches.NvidiaTuring
+                Return 64
+            Case uarches.NvidiaAmpere
                 Return 64
             Case uarches.AMDGCN1
                 Return 64
@@ -64,6 +72,7 @@
         NvidiaMaxwell
         NvidiaPascal
         NvidiaTuring
+        NvidiaAmpere
         AMDGCN1
         AMDGCN2
         AMDGCN3

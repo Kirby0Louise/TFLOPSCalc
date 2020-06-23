@@ -38,33 +38,36 @@
                 currentUarch = CalcCompute.uarches.NvidiaTuring
                 lblStep2.Text = "Step 2:  Enter number of SMs"
             Case 5
+                currentUarch = CalcCompute.uarches.NvidiaAmpere
+                lblStep2.Text = "Step 2:  Enter number of SMs"
+            Case 6
                 currentUarch = CalcCompute.uarches.AMDGCN1
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 6
+            Case 7
                 currentUarch = CalcCompute.uarches.AMDGCN2
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 7
+            Case 8
                 currentUarch = CalcCompute.uarches.AMDGCN3
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 8
+            Case 9
                 currentUarch = CalcCompute.uarches.AMDGCN4
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 9
+            Case 10
                 currentUarch = CalcCompute.uarches.AMDVega
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 10
+            Case 11
                 currentUarch = CalcCompute.uarches.AMDRDNA1
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 11
+            Case 12
                 currentUarch = CalcCompute.uarches.AMDRDNA2
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 12
+            Case 13
                 currentUarch = CalcCompute.uarches.Intelgen8
                 lblStep2.Text = "Step 2:  Enter number of EUs"
-            Case 13
+            Case 14
                 currentUarch = CalcCompute.uarches.Intelgen9
                 lblStep2.Text = "Step 2:  Enter number of EUs"
-            Case 14
+            Case 15
                 currentUarch = CalcCompute.uarches.Intelgen11
                 lblStep2.Text = "Step 2:  Enter number of EUs"
         End Select
@@ -103,35 +106,38 @@
                 currentUarch = CalcCompute.uarches.NvidiaTuring
                 lblStep2a.Text = "Step 2:  Enter number of SMs"
             Case 5
-                currentUarch = CalcCompute.uarches.AMDGCN1
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.NvidiaAmpere
+                lblStep2.Text = "Step 2:  Enter number of SMs"
             Case 6
-                currentUarch = CalcCompute.uarches.AMDGCN2
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN1
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 7
-                currentUarch = CalcCompute.uarches.AMDGCN3
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN2
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 8
-                currentUarch = CalcCompute.uarches.AMDGCN4
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN3
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 9
-                currentUarch = CalcCompute.uarches.AMDVega
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN4
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 10
-                currentUarch = CalcCompute.uarches.AMDRDNA1
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.AMDVega
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 11
-                currentUarch = CalcCompute.uarches.AMDRDNA2
-                lblStep2a.Text = "Step 2:  Enter number of CUs"
+                currentUarch = CalcCompute.uarches.AMDRDNA1
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 12
-                currentUarch = CalcCompute.uarches.Intelgen8
-                lblStep2a.Text = "Step 2:  Enter number of EUs"
+                currentUarch = CalcCompute.uarches.AMDRDNA2
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 13
-                currentUarch = CalcCompute.uarches.Intelgen9
-                lblStep2a.Text = "Step 2:  Enter number of EUs"
+                currentUarch = CalcCompute.uarches.Intelgen8
+                lblStep2.Text = "Step 2:  Enter number of EUs"
             Case 14
+                currentUarch = CalcCompute.uarches.Intelgen9
+                lblStep2.Text = "Step 2:  Enter number of EUs"
+            Case 15
                 currentUarch = CalcCompute.uarches.Intelgen11
-                lblStep2a.Text = "Step 2:  Enter number of EUs"
+                lblStep2.Text = "Step 2:  Enter number of EUs"
         End Select
 
         Dim result As Single = 0
@@ -184,35 +190,38 @@
                 currentUarch = CalcCompute.uarches.NvidiaTuring
                 computeUnitName = "SMs"
             Case 5
-                currentUarch = CalcCompute.uarches.AMDGCN1
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.NvidiaAmpere
+                lblStep2.Text = "Step 2:  Enter number of SMs"
             Case 6
-                currentUarch = CalcCompute.uarches.AMDGCN2
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN1
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 7
-                currentUarch = CalcCompute.uarches.AMDGCN3
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN2
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 8
-                currentUarch = CalcCompute.uarches.AMDGCN4
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN3
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 9
-                currentUarch = CalcCompute.uarches.AMDVega
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.AMDGCN4
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 10
-                currentUarch = CalcCompute.uarches.AMDRDNA1
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.AMDVega
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 11
-                currentUarch = CalcCompute.uarches.AMDRDNA2
-                computeUnitName = "CUs"
+                currentUarch = CalcCompute.uarches.AMDRDNA1
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 12
-                currentUarch = CalcCompute.uarches.Intelgen8
-                computeUnitName = "EUs"
+                currentUarch = CalcCompute.uarches.AMDRDNA2
+                lblStep2.Text = "Step 2:  Enter number of CUs"
             Case 13
-                currentUarch = CalcCompute.uarches.Intelgen9
-                computeUnitName = "EUs"
+                currentUarch = CalcCompute.uarches.Intelgen8
+                lblStep2.Text = "Step 2:  Enter number of EUs"
             Case 14
+                currentUarch = CalcCompute.uarches.Intelgen9
+                lblStep2.Text = "Step 2:  Enter number of EUs"
+            Case 15
                 currentUarch = CalcCompute.uarches.Intelgen11
-                computeUnitName = "EUs"
+                lblStep2.Text = "Step 2:  Enter number of EUs"
         End Select
 
         Dim result As Single = 0
