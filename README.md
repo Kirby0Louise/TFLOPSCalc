@@ -1,7 +1,7 @@
 # TFLOPSCalc
 A TFLOPS Calculator for a next-gen world
 
-Current Release Version:  v 1.0
+Current Release Version:  v 1.3.2
 
 STILL UNDER CONSTRUCTION
 
@@ -31,9 +31,16 @@ v 1.3
 Added in support for Nvidia Ampere and fixed some bugs with new compilation
 
 
+
 v 1.3.1
 
 Fixed a bone-headed bug with text labeling - always be careful when copy-pasting code trying to save time!!!!
+
+
+
+v 1.3.2
+
+Fixed a boneheaded bug with Ampere and added support for Intel Alchemist
 
 
 
