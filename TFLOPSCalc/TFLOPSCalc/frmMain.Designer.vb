@@ -216,7 +216,7 @@ Partial Class frmMain
         '
         Me.cbUarch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbUarch.FormattingEnabled = True
-        Me.cbUarch.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11"})
+        Me.cbUarch.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11", "Intel Alchemist"})
         Me.cbUarch.Location = New System.Drawing.Point(6, 41)
         Me.cbUarch.Name = "cbUarch"
         Me.cbUarch.Size = New System.Drawing.Size(121, 21)

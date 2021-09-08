@@ -9,3 +9,4 @@ C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.vbproj.
 C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.exe
 C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.xml
 C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.pdb
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.vbproj.CoreCompileInputs.cache

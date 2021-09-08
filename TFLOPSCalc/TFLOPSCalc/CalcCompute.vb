@@ -40,7 +40,7 @@
             Case uarches.NvidiaTuring
                 Return 64
             Case uarches.NvidiaAmpere
-                Return 64
+                Return 128
             Case uarches.AMDGCN1
                 Return 64
             Case uarches.AMDGCN2
@@ -60,6 +60,8 @@
             Case uarches.Intelgen9
                 Return 8
             Case uarches.Intelgen11
+                Return 8
+            Case uarches.IntelAlchemist
                 Return 8
             Case Else
                 Return 0
@@ -83,6 +85,7 @@
         Intelgen8
         Intelgen9
         Intelgen11
+        IntelAlchemist
     End Enum
 
 End Class
