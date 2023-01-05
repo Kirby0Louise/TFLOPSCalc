@@ -1,7 +1,7 @@
 # TFLOPSCalc
 A TFLOPS Calculator for a next-gen world
 
-Current Release Version:  v 1.3.2
+Current Release Version:  v 1.4
 
 STILL UNDER CONSTRUCTION
 
@@ -44,6 +44,14 @@ Fixed a boneheaded bug with Ampere and added support for Intel Alchemist
 
 
 
+v 1.4
+
+Added support for Ada and RDNA3
+Fixed bugs
+
+
+
 # TODO:
 
 Finish other tabs
+Turn this into a general purpose GPU utility in the future?
