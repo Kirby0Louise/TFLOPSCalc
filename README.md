@@ -51,6 +51,16 @@ Fixed bugs
 
 
 
+v 1.5
+
+New Feature - Ray Metrics
+Marked Known Compute as WIP
+Added support for Blackwell, RDNA4 and Battlemage
+Preliminary support for RDNA5, Celestial and Druid
+Fixed bugs
+
+
+
 # TODO:
 
 Finish other tabs
