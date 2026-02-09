@@ -1,0 +1,12 @@
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Release\TFLOPSCalc.exe.config
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Release\TFLOPSCalc.exe
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Release\TFLOPSCalc.pdb
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\bin\Release\TFLOPSCalc.xml
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.vbprojAssemblyReference.cache
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.frmMain.resources
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.Resources.resources
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.vbproj.GenerateResource.cache
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.exe
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.xml
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.pdb
+C:\Users\darkm\source\repos\TFLOPSCalc\TFLOPSCalc\obj\Release\TFLOPSCalc.vbproj.CoreCompileInputs.cache

@@ -61,6 +61,7 @@ Partial Class frmMain
         Me.cbUarchb = New System.Windows.Forms.ComboBox()
         Me.lblStep1b = New System.Windows.Forms.Label()
         Me.tpKnowCompute = New System.Windows.Forms.TabPage()
+        Me.lblWIP = New System.Windows.Forms.Label()
         Me.tpAbout = New System.Windows.Forms.TabPage()
         Me.llTFLOPSRepo = New System.Windows.Forms.LinkLabel()
         Me.llMyGithub = New System.Windows.Forms.LinkLabel()
@@ -68,6 +69,21 @@ Partial Class frmMain
         Me.llTwitter = New System.Windows.Forms.LinkLabel()
         Me.pcKirby = New System.Windows.Forms.PictureBox()
         Me.lblAbout = New System.Windows.Forms.Label()
+        Me.tpRayMetrics = New System.Windows.Forms.TabPage()
+        Me.lblClockd = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.tbClockSpeedd = New System.Windows.Forms.TrackBar()
+        Me.lblStep3d = New System.Windows.Forms.Label()
+        Me.nudComputeUnitsd = New System.Windows.Forms.NumericUpDown()
+        Me.lblStep2d = New System.Windows.Forms.Label()
+        Me.cbUarchd = New System.Windows.Forms.ComboBox()
+        Me.lblStep1d = New System.Windows.Forms.Label()
+        Me.lblGRayTri = New System.Windows.Forms.Label()
+        Me.lblGRayBox = New System.Windows.Forms.Label()
+        Me.lblResultd = New System.Windows.Forms.Label()
+        Me.lblRayPerCycle = New System.Windows.Forms.Label()
+        Me.lblBVHCycles = New System.Windows.Forms.Label()
         Me.tcMain.SuspendLayout()
         Me.tpCalculator.SuspendLayout()
         CType(Me.tbClockSpeed, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,9 +92,13 @@ Partial Class frmMain
         CType(Me.nudComputeUnitsa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpUnknownCU.SuspendLayout()
         CType(Me.tbClockSpeedb, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpKnowCompute.SuspendLayout()
         Me.tpAbout.SuspendLayout()
         CType(Me.pbLouise, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pcKirby, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpRayMetrics.SuspendLayout()
+        CType(Me.tbClockSpeedd, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nudComputeUnitsd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tcMain
@@ -87,11 +107,12 @@ Partial Class frmMain
         Me.tcMain.Controls.Add(Me.tpUnknownClock)
         Me.tcMain.Controls.Add(Me.tpUnknownCU)
         Me.tcMain.Controls.Add(Me.tpKnowCompute)
+        Me.tcMain.Controls.Add(Me.tpRayMetrics)
         Me.tcMain.Controls.Add(Me.tpAbout)
         Me.tcMain.Location = New System.Drawing.Point(12, 12)
         Me.tcMain.Name = "tcMain"
         Me.tcMain.SelectedIndex = 0
-        Me.tcMain.Size = New System.Drawing.Size(860, 472)
+        Me.tcMain.Size = New System.Drawing.Size(860, 561)
         Me.tcMain.TabIndex = 0
         '
         'tpCalculator
@@ -111,7 +132,7 @@ Partial Class frmMain
         Me.tpCalculator.Location = New System.Drawing.Point(4, 22)
         Me.tpCalculator.Name = "tpCalculator"
         Me.tpCalculator.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpCalculator.Size = New System.Drawing.Size(852, 446)
+        Me.tpCalculator.Size = New System.Drawing.Size(852, 535)
         Me.tpCalculator.TabIndex = 0
         Me.tpCalculator.Text = "Calculator"
         Me.tpCalculator.UseVisualStyleBackColor = True
@@ -216,7 +237,7 @@ Partial Class frmMain
         '
         Me.cbUarch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbUarch.FormattingEnabled = True
-        Me.cbUarch.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11", "Intel Alchemist"})
+        Me.cbUarch.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "Nvidia Ada", "Nvidia Blackwell", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "AMD RDNA3", "AMD RDNA4", "AMD RDNA5 (WIP)", "Intel gen8", "Intel gen9", "Intel gen11", "Intel Alchemist", "Intel Battlemage", "Intel Celestial (WIP)", "Intel Druid (WIP)"})
         Me.cbUarch.Location = New System.Drawing.Point(6, 41)
         Me.cbUarch.Name = "cbUarch"
         Me.cbUarch.Size = New System.Drawing.Size(121, 21)
@@ -318,7 +339,7 @@ Partial Class frmMain
         '
         Me.cbUarcha.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbUarcha.FormattingEnabled = True
-        Me.cbUarcha.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11"})
+        Me.cbUarcha.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "Nvidia Ada", "Nvidia Blackwell", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "AMD RDNA3", "AMD RDNA4", "AMD RDNA5 (WIP)", "Intel gen8", "Intel gen9", "Intel gen11", "Intel Alchemist", "Intel Battlemage", "Intel Celestial (WIP)", "Intel Druid (WIP)"})
         Me.cbUarcha.Location = New System.Drawing.Point(6, 41)
         Me.cbUarcha.Name = "cbUarcha"
         Me.cbUarcha.Size = New System.Drawing.Size(121, 21)
@@ -350,7 +371,7 @@ Partial Class frmMain
         Me.tpUnknownCU.Location = New System.Drawing.Point(4, 22)
         Me.tpUnknownCU.Name = "tpUnknownCU"
         Me.tpUnknownCU.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpUnknownCU.Size = New System.Drawing.Size(852, 446)
+        Me.tpUnknownCU.Size = New System.Drawing.Size(852, 535)
         Me.tpUnknownCU.TabIndex = 1
         Me.tpUnknownCU.Text = "Unknown # of CU/SM/EU"
         Me.tpUnknownCU.UseVisualStyleBackColor = True
@@ -452,7 +473,7 @@ Partial Class frmMain
         '
         Me.cbUarchb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbUarchb.FormattingEnabled = True
-        Me.cbUarchb.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "Intel gen8", "Intel gen9", "Intel gen11"})
+        Me.cbUarchb.Items.AddRange(New Object() {"Nvidia Fermi", "Nvidia Kepler", "Nvidia Maxwell", "Nvidia Pascal", "Nvidia Turing", "Nvidia Ampere", "Nvidia Ada", "Nvidia Blackwell", "AMD GCN 1.0", "AMD GCN 2.0", "AMD GCN 3.0", "AMD GCN 4.0", "AMD Vega", "AMD RDNA1", "AMD RDNA2", "AMD RDNA3", "AMD RDNA4", "AMD RDNA5 (WIP)", "Intel gen8", "Intel gen9", "Intel gen11", "Intel Alchemist", "Intel Battlemage", "Intel Celestial (WIP)", "Intel Druid (WIP)"})
         Me.cbUarchb.Location = New System.Drawing.Point(6, 41)
         Me.cbUarchb.Name = "cbUarchb"
         Me.cbUarchb.Size = New System.Drawing.Size(121, 21)
@@ -469,12 +490,23 @@ Partial Class frmMain
         '
         'tpKnowCompute
         '
+        Me.tpKnowCompute.Controls.Add(Me.lblWIP)
         Me.tpKnowCompute.Location = New System.Drawing.Point(4, 22)
         Me.tpKnowCompute.Name = "tpKnowCompute"
-        Me.tpKnowCompute.Size = New System.Drawing.Size(852, 446)
+        Me.tpKnowCompute.Size = New System.Drawing.Size(852, 535)
         Me.tpKnowCompute.TabIndex = 2
         Me.tpKnowCompute.Text = "Known Compute"
         Me.tpKnowCompute.UseVisualStyleBackColor = True
+        '
+        'lblWIP
+        '
+        Me.lblWIP.AutoSize = True
+        Me.lblWIP.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWIP.Location = New System.Drawing.Point(280, 144)
+        Me.lblWIP.Name = "lblWIP"
+        Me.lblWIP.Size = New System.Drawing.Size(230, 108)
+        Me.lblWIP.TabIndex = 0
+        Me.lblWIP.Text = "WIP"
         '
         'tpAbout
         '
@@ -515,7 +547,6 @@ Partial Class frmMain
         '
         'pbLouise
         '
-        Me.pbLouise.Image = Global.TFLOPSCalc.My.Resources.Resources.louise
         Me.pbLouise.Location = New System.Drawing.Point(578, 187)
         Me.pbLouise.Name = "pbLouise"
         Me.pbLouise.Size = New System.Drawing.Size(256, 256)
@@ -536,7 +567,6 @@ Partial Class frmMain
         '
         'pcKirby
         '
-        Me.pcKirby.Image = Global.TFLOPSCalc.My.Resources.Resources.kirby
         Me.pcKirby.Location = New System.Drawing.Point(16, 187)
         Me.pcKirby.Name = "pcKirby"
         Me.pcKirby.Size = New System.Drawing.Size(256, 256)
@@ -553,11 +583,169 @@ Partial Class frmMain
         Me.lblAbout.TabIndex = 0
         Me.lblAbout.Text = resources.GetString("lblAbout.Text")
         '
+        'tpRayMetrics
+        '
+        Me.tpRayMetrics.Controls.Add(Me.lblBVHCycles)
+        Me.tpRayMetrics.Controls.Add(Me.lblRayPerCycle)
+        Me.tpRayMetrics.Controls.Add(Me.lblGRayTri)
+        Me.tpRayMetrics.Controls.Add(Me.lblGRayBox)
+        Me.tpRayMetrics.Controls.Add(Me.lblResultd)
+        Me.tpRayMetrics.Controls.Add(Me.lblClockd)
+        Me.tpRayMetrics.Controls.Add(Me.Label2)
+        Me.tpRayMetrics.Controls.Add(Me.Label3)
+        Me.tpRayMetrics.Controls.Add(Me.tbClockSpeedd)
+        Me.tpRayMetrics.Controls.Add(Me.lblStep3d)
+        Me.tpRayMetrics.Controls.Add(Me.nudComputeUnitsd)
+        Me.tpRayMetrics.Controls.Add(Me.lblStep2d)
+        Me.tpRayMetrics.Controls.Add(Me.cbUarchd)
+        Me.tpRayMetrics.Controls.Add(Me.lblStep1d)
+        Me.tpRayMetrics.Location = New System.Drawing.Point(4, 22)
+        Me.tpRayMetrics.Name = "tpRayMetrics"
+        Me.tpRayMetrics.Size = New System.Drawing.Size(852, 535)
+        Me.tpRayMetrics.TabIndex = 5
+        Me.tpRayMetrics.Text = "Ray Metrics (WIP)"
+        Me.tpRayMetrics.UseVisualStyleBackColor = True
+        '
+        'lblClockd
+        '
+        Me.lblClockd.AutoSize = True
+        Me.lblClockd.Location = New System.Drawing.Point(6, 263)
+        Me.lblClockd.Name = "lblClockd"
+        Me.lblClockd.Size = New System.Drawing.Size(105, 13)
+        Me.lblClockd.TabIndex = 21
+        Me.lblClockd.Text = "Clock Speed: 1 MHz"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(787, 223)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(56, 13)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "5000 MHz"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(6, 223)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "1 MHz"
+        '
+        'tbClockSpeedd
+        '
+        Me.tbClockSpeedd.Location = New System.Drawing.Point(9, 175)
+        Me.tbClockSpeedd.Maximum = 5000
+        Me.tbClockSpeedd.Minimum = 1
+        Me.tbClockSpeedd.Name = "tbClockSpeedd"
+        Me.tbClockSpeedd.Size = New System.Drawing.Size(834, 45)
+        Me.tbClockSpeedd.TabIndex = 18
+        Me.tbClockSpeedd.TickStyle = System.Windows.Forms.TickStyle.None
+        Me.tbClockSpeedd.Value = 1
+        '
+        'lblStep3d
+        '
+        Me.lblStep3d.AutoSize = True
+        Me.lblStep3d.Location = New System.Drawing.Point(3, 150)
+        Me.lblStep3d.Name = "lblStep3d"
+        Me.lblStep3d.Size = New System.Drawing.Size(169, 13)
+        Me.lblStep3d.TabIndex = 17
+        Me.lblStep3d.Text = "Step 3:  Enter clock speed in MHz"
+        '
+        'nudComputeUnitsd
+        '
+        Me.nudComputeUnitsd.Location = New System.Drawing.Point(3, 112)
+        Me.nudComputeUnitsd.Maximum = New Decimal(New Integer() {1000, 0, 0, 0})
+        Me.nudComputeUnitsd.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.nudComputeUnitsd.Name = "nudComputeUnitsd"
+        Me.nudComputeUnitsd.Size = New System.Drawing.Size(67, 20)
+        Me.nudComputeUnitsd.TabIndex = 16
+        Me.nudComputeUnitsd.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'lblStep2d
+        '
+        Me.lblStep2d.AutoSize = True
+        Me.lblStep2d.Location = New System.Drawing.Point(3, 82)
+        Me.lblStep2d.Name = "lblStep2d"
+        Me.lblStep2d.Size = New System.Drawing.Size(146, 13)
+        Me.lblStep2d.TabIndex = 15
+        Me.lblStep2d.Text = "Step 2:  Enter number of SMs"
+        '
+        'cbUarchd
+        '
+        Me.cbUarchd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbUarchd.FormattingEnabled = True
+        Me.cbUarchd.Items.AddRange(New Object() {"Nvidia Turing", "Nvidia Ampere", "Nvidia Ada", "Nvidia Blackwell", "AMD RDNA2", "AMD RDNA3", "AMD RDNA4", "AMD RDNA5 (WIP)", "Intel Alchemist", "Intel Battlemage", "Intel Celestial (WIP)", "Intel Druid (WIP)"})
+        Me.cbUarchd.Location = New System.Drawing.Point(3, 39)
+        Me.cbUarchd.Name = "cbUarchd"
+        Me.cbUarchd.Size = New System.Drawing.Size(121, 21)
+        Me.cbUarchd.TabIndex = 14
+        '
+        'lblStep1d
+        '
+        Me.lblStep1d.AutoSize = True
+        Me.lblStep1d.Location = New System.Drawing.Point(3, 13)
+        Me.lblStep1d.Name = "lblStep1d"
+        Me.lblStep1d.Size = New System.Drawing.Size(203, 13)
+        Me.lblStep1d.TabIndex = 13
+        Me.lblStep1d.Text = "Step 1:  Choose microarchitecture (μarch)"
+        '
+        'lblGRayTri
+        '
+        Me.lblGRayTri.AutoSize = True
+        Me.lblGRayTri.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGRayTri.Location = New System.Drawing.Point(3, 385)
+        Me.lblGRayTri.Name = "lblGRayTri"
+        Me.lblGRayTri.Size = New System.Drawing.Size(147, 31)
+        Me.lblGRayTri.TabIndex = 24
+        Me.lblGRayTri.Text = "0 GRayTri"
+        '
+        'lblGRayBox
+        '
+        Me.lblGRayBox.AutoSize = True
+        Me.lblGRayBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGRayBox.Location = New System.Drawing.Point(3, 345)
+        Me.lblGRayBox.Name = "lblGRayBox"
+        Me.lblGRayBox.Size = New System.Drawing.Size(161, 31)
+        Me.lblGRayBox.TabIndex = 23
+        Me.lblGRayBox.Text = "0 GRayBox"
+        '
+        'lblResultd
+        '
+        Me.lblResultd.AutoSize = True
+        Me.lblResultd.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResultd.Location = New System.Drawing.Point(3, 311)
+        Me.lblResultd.Name = "lblResultd"
+        Me.lblResultd.Size = New System.Drawing.Size(79, 25)
+        Me.lblResultd.TabIndex = 22
+        Me.lblResultd.Text = "Result:"
+        '
+        'lblRayPerCycle
+        '
+        Me.lblRayPerCycle.AutoSize = True
+        Me.lblRayPerCycle.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRayPerCycle.Location = New System.Drawing.Point(3, 426)
+        Me.lblRayPerCycle.Name = "lblRayPerCycle"
+        Me.lblRayPerCycle.Size = New System.Drawing.Size(215, 31)
+        Me.lblRayPerCycle.TabIndex = 25
+        Me.lblRayPerCycle.Text = "Per Cycle:  0, 0"
+        '
+        'lblBVHCycles
+        '
+        Me.lblBVHCycles.AutoSize = True
+        Me.lblBVHCycles.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBVHCycles.Location = New System.Drawing.Point(3, 468)
+        Me.lblBVHCycles.Name = "lblBVHCycles"
+        Me.lblBVHCycles.Size = New System.Drawing.Size(385, 31)
+        Me.lblBVHCycles.TabIndex = 26
+        Me.lblBVHCycles.Text = "Cycles per BVH Traverse:  0"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(884, 496)
+        Me.ClientSize = New System.Drawing.Size(884, 585)
         Me.Controls.Add(Me.tcMain)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmMain"
@@ -573,10 +761,16 @@ Partial Class frmMain
         Me.tpUnknownCU.ResumeLayout(False)
         Me.tpUnknownCU.PerformLayout()
         CType(Me.tbClockSpeedb, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpKnowCompute.ResumeLayout(False)
+        Me.tpKnowCompute.PerformLayout()
         Me.tpAbout.ResumeLayout(False)
         Me.tpAbout.PerformLayout()
         CType(Me.pbLouise, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pcKirby, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpRayMetrics.ResumeLayout(False)
+        Me.tpRayMetrics.PerformLayout()
+        CType(Me.tbClockSpeedd, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nudComputeUnitsd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -626,4 +820,20 @@ Partial Class frmMain
     Friend WithEvents lblResultb As Label
     Friend WithEvents txtComputeb As TextBox
     Friend WithEvents lblStep3b As Label
+    Friend WithEvents lblWIP As Label
+    Friend WithEvents tpRayMetrics As TabPage
+    Friend WithEvents lblClockd As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents tbClockSpeedd As TrackBar
+    Friend WithEvents lblStep3d As Label
+    Friend WithEvents nudComputeUnitsd As NumericUpDown
+    Friend WithEvents lblStep2d As Label
+    Friend WithEvents cbUarchd As ComboBox
+    Friend WithEvents lblStep1d As Label
+    Friend WithEvents lblGRayTri As Label
+    Friend WithEvents lblGRayBox As Label
+    Friend WithEvents lblResultd As Label
+    Friend WithEvents lblBVHCycles As Label
+    Friend WithEvents lblRayPerCycle As Label
 End Class

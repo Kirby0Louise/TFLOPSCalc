@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TFLOPSCalc
+</name>
+</assembly>
+<members>
+<member name="T:TFLOPSCalc.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TFLOPSCalc.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TFLOPSCalc.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:TFLOPSCalc.My.Resources.Resources.kirby">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:TFLOPSCalc.My.Resources.Resources.louise">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:TFLOPSCalc.CalcCompute.getRayBoxForUarch(TFLOPSCalc.CalcCompute.uarches)">
+ <summary>
+ Return RayBox per cycle per unit for uarch
+ </summary>
+ <param name="uarch"></param>
+ <remarks>RDNA2, RDNA3 and RDNA4 are known (Xbox Series X Hotchips)
+ Alchemist and Battlemage are known (Intel Architecture talks)
+ Turing is estimated, Ampere, Ada and Blackwell are using whitepapers relative to this estimation
+ </remarks>
+ <returns></returns>
+</member>
+<member name="M:TFLOPSCalc.CalcCompute.getRayTriForUarch(TFLOPSCalc.CalcCompute.uarches)">
+ <summary>
+ Return RayTri per cycle per unit for uarch
+ </summary>
+ <param name="uarch"></param>
+ <remarks>RDNA2, RDNA3 and RDNA4 are known (Xbox Series X Hotchips)
+ Alchemist and Battlemage are known (Intel Architecture talks)
+ Turing is estimated, Ampere, Ada and Blackwell are using whitepapers relative to this estimation
+ </remarks>
+ <returns></returns>
+</member>
+<member name="M:TFLOPSCalc.CalcCompute.getTraverseCyclesForUarch(TFLOPSCalc.CalcCompute.uarches)">
+ <summary>
+ Return cycles per BVH traversal per unit for uarch.  -1 means traversal is handled in softare
+ </summary>
+ <param name="uarch"></param>
+ <remarks>Turing is known (Nvidia whitepaper)
+ RDNA2, RDNA3, RDNA4 is known (Xbox Series X Hotchips, AMD slidedecks)
+ Alchemist, Battlemage are unknown but have HW acceleration (noted as 1 cycle for now)
+ </remarks>
+ <returns></returns>
+</member>
+</members>
+</doc>

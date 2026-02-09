@@ -41,38 +41,62 @@
                 currentUarch = CalcCompute.uarches.NvidiaAmpere
                 lblStep2.Text = "Step 2:  Enter number of SMs"
             Case 6
+                currentUarch = CalcCompute.uarches.NvidiaAda
+                lblStep2.Text = "Step 2:  Enter number of SMs"
+            Case 7
+                currentUarch = CalcCompute.uarches.NvidiaBlackwell
+                lblStep2.Text = "Step 2:  Enter number of SMs"
+            Case 8
                 currentUarch = CalcCompute.uarches.AMDGCN1
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 7
+            Case 9
                 currentUarch = CalcCompute.uarches.AMDGCN2
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 8
+            Case 10
                 currentUarch = CalcCompute.uarches.AMDGCN3
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 9
+            Case 11
                 currentUarch = CalcCompute.uarches.AMDGCN4
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 10
+            Case 12
                 currentUarch = CalcCompute.uarches.AMDVega
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 11
+            Case 13
                 currentUarch = CalcCompute.uarches.AMDRDNA1
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 12
+            Case 14
                 currentUarch = CalcCompute.uarches.AMDRDNA2
                 lblStep2.Text = "Step 2:  Enter number of CUs"
-            Case 13
+            Case 15
+                currentUarch = CalcCompute.uarches.AMDRDNA3
+                lblStep2.Text = "Step 2:  Enter number of CUs"
+            Case 16
+                currentUarch = CalcCompute.uarches.AMDRDNA4
+                lblStep2.Text = "Step 2:  Enter number of CUs"
+            Case 17
+                currentUarch = CalcCompute.uarches.AMDRDNA5 'WIP
+                lblStep2.Text = "Step 2:  Enter number of CUs"
+            Case 18
                 currentUarch = CalcCompute.uarches.Intelgen8
                 lblStep2.Text = "Step 2:  Enter number of EUs"
-            Case 14
+            Case 19
                 currentUarch = CalcCompute.uarches.Intelgen9
                 lblStep2.Text = "Step 2:  Enter number of EUs"
-            Case 15
+            Case 20
                 currentUarch = CalcCompute.uarches.Intelgen11
                 lblStep2.Text = "Step 2:  Enter number of EUs"
-            Case 16
+            Case 21
                 currentUarch = CalcCompute.uarches.IntelAlchemist
-                lblStep2a.Text = "Step 2:  Enter number of EUs"
+                lblStep2.Text = "Step 2:  Enter number of Xe Cores"
+            Case 22
+                currentUarch = CalcCompute.uarches.IntelBattlemage
+                lblStep2.Text = "Step 2:  Enter number of Xe Cores"
+            Case 23
+                currentUarch = CalcCompute.uarches.IntelCelestial 'WIP
+                lblStep2.Text = "Step 2:  Enter number of Xe Cores"
+            Case 24
+                currentUarch = CalcCompute.uarches.IntelDruid 'WIP
+                lblStep2.Text = "Step 2:  Enter number of Xe Cores"
         End Select
 
         lblTFLOPS.Text = CalcCompute.calculateCompute(currentUarch, nudComputeUnits.Value, tbClockSpeed.Value, False) & "TFLOPS"
@@ -112,38 +136,62 @@
                 currentUarch = CalcCompute.uarches.NvidiaAmpere
                 lblStep2a.Text = "Step 2:  Enter number of SMs"
             Case 6
+                currentUarch = CalcCompute.uarches.NvidiaAda
+                lblStep2a.Text = "Step 2:  Enter number of SMs"
+            Case 7
+                currentUarch = CalcCompute.uarches.NvidiaBlackwell
+                lblStep2a.Text = "Step 2:  Enter number of SMs"
+            Case 8
                 currentUarch = CalcCompute.uarches.AMDGCN1
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 7
+            Case 9
                 currentUarch = CalcCompute.uarches.AMDGCN2
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 8
+            Case 10
                 currentUarch = CalcCompute.uarches.AMDGCN3
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 9
+            Case 11
                 currentUarch = CalcCompute.uarches.AMDGCN4
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 10
+            Case 12
                 currentUarch = CalcCompute.uarches.AMDVega
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 11
+            Case 13
                 currentUarch = CalcCompute.uarches.AMDRDNA1
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 12
+            Case 14
                 currentUarch = CalcCompute.uarches.AMDRDNA2
                 lblStep2a.Text = "Step 2:  Enter number of CUs"
-            Case 13
+            Case 15
+                currentUarch = CalcCompute.uarches.AMDRDNA3
+                lblStep2a.Text = "Step 2:  Enter number of CUs"
+            Case 16
+                currentUarch = CalcCompute.uarches.AMDRDNA4
+                lblStep2a.Text = "Step 2:  Enter number of CUs"
+            Case 17
+                currentUarch = CalcCompute.uarches.AMDRDNA5 'WIP
+                lblStep2a.Text = "Step 2:  Enter number of CUs"
+            Case 18
                 currentUarch = CalcCompute.uarches.Intelgen8
                 lblStep2a.Text = "Step 2:  Enter number of EUs"
-            Case 14
+            Case 19
                 currentUarch = CalcCompute.uarches.Intelgen9
                 lblStep2a.Text = "Step 2:  Enter number of EUs"
-            Case 15
+            Case 20
                 currentUarch = CalcCompute.uarches.Intelgen11
                 lblStep2a.Text = "Step 2:  Enter number of EUs"
-            Case 16
+            Case 21
                 currentUarch = CalcCompute.uarches.IntelAlchemist
-                lblStep2a.Text = "Step 2:  Enter number of EUs"
+                lblStep2a.Text = "Step 2:  Enter number of Xe Cores"
+            Case 22
+                currentUarch = CalcCompute.uarches.IntelBattlemage
+                lblStep2a.Text = "Step 2:  Enter number of Xe Cores"
+            Case 23
+                currentUarch = CalcCompute.uarches.IntelCelestial 'WIP
+                lblStep2a.Text = "Step 2:  Enter number of Xe Cores"
+            Case 24
+                currentUarch = CalcCompute.uarches.IntelDruid 'WIP
+                lblStep2a.Text = "Step 2:  Enter number of Xe Cores"
         End Select
 
         Dim result As Single = 0
@@ -199,38 +247,62 @@
                 currentUarch = CalcCompute.uarches.NvidiaAmpere
                 computeUnitName = "SMs"
             Case 6
+                currentUarch = CalcCompute.uarches.NvidiaAda
+                computeUnitName = "SMs"
+            Case 7
+                currentUarch = CalcCompute.uarches.NvidiaBlackwell
+                computeUnitName = "SMs"
+            Case 8
                 currentUarch = CalcCompute.uarches.AMDGCN1
                 computeUnitName = "CUs"
-            Case 7
+            Case 9
                 currentUarch = CalcCompute.uarches.AMDGCN2
                 computeUnitName = "CUs"
-            Case 8
+            Case 10
                 currentUarch = CalcCompute.uarches.AMDGCN3
                 computeUnitName = "CUs"
-            Case 9
+            Case 11
                 currentUarch = CalcCompute.uarches.AMDGCN4
                 computeUnitName = "CUs"
-            Case 10
+            Case 12
                 currentUarch = CalcCompute.uarches.AMDVega
                 computeUnitName = "CUs"
-            Case 11
+            Case 13
                 currentUarch = CalcCompute.uarches.AMDRDNA1
                 computeUnitName = "CUs"
-            Case 12
+            Case 14
                 currentUarch = CalcCompute.uarches.AMDRDNA2
                 computeUnitName = "CUs"
-            Case 13
+            Case 15
+                currentUarch = CalcCompute.uarches.AMDRDNA3
+                computeUnitName = "CUs"
+            Case 16
+                currentUarch = CalcCompute.uarches.AMDRDNA4
+                computeUnitName = "CUs"
+            Case 17
+                currentUarch = CalcCompute.uarches.AMDRDNA5 'WIP
+                computeUnitName = "CUs"
+            Case 18
                 currentUarch = CalcCompute.uarches.Intelgen8
                 computeUnitName = "EUs"
-            Case 14
+            Case 19
                 currentUarch = CalcCompute.uarches.Intelgen9
                 computeUnitName = "EUs"
-            Case 15
+            Case 20
                 currentUarch = CalcCompute.uarches.Intelgen11
                 computeUnitName = "EUs"
-            Case 16
+            Case 21
                 currentUarch = CalcCompute.uarches.IntelAlchemist
-                computeUnitName = "EUs"
+                computeUnitName = "Xe Cores"
+            Case 22
+                currentUarch = CalcCompute.uarches.IntelBattlemage
+                computeUnitName = "Xe Cores"
+            Case 23
+                currentUarch = CalcCompute.uarches.IntelCelestial 'WIP
+                computeUnitName = "Xe Cores"
+            Case 24
+                currentUarch = CalcCompute.uarches.IntelDruid 'WIP
+                computeUnitName = "Xe Cores"
         End Select
 
         Dim result As Single = 0
@@ -260,6 +332,83 @@
             lblReqCU.Text = CalcCompute.findReqCUs(currentUarch, tbClockSpeedb.Value, result) & " " & computeUnitName
         Else
             lblReqCU.Text = "INVALID INPUT"
+        End If
+    End Sub
+
+    Private Sub cbUarchd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbUarchd.SelectedIndexChanged
+        Select Case cbUarchd.SelectedIndex
+            Case 0
+                currentUarch = CalcCompute.uarches.NvidiaTuring
+                lblStep2d.Text = "Step 2:  Enter number of SMs"
+            Case 1
+                currentUarch = CalcCompute.uarches.NvidiaAmpere
+                lblStep2d.Text = "Step 2:  Enter number of SMs"
+            Case 2
+                currentUarch = CalcCompute.uarches.NvidiaAda
+                lblStep2d.Text = "Step 2:  Enter number of SMs"
+            Case 3
+                currentUarch = CalcCompute.uarches.NvidiaBlackwell
+                lblStep2d.Text = "Step 2:  Enter number of SMs"
+            Case 4
+                currentUarch = CalcCompute.uarches.AMDRDNA2
+                lblStep2d.Text = "Step 2:  Enter number of CUs"
+            Case 5
+                currentUarch = CalcCompute.uarches.AMDRDNA3
+                lblStep2d.Text = "Step 2:  Enter number of CUs"
+            Case 6
+                currentUarch = CalcCompute.uarches.AMDRDNA4
+                lblStep2d.Text = "Step 2:  Enter number of CUs"
+            Case 7
+                currentUarch = CalcCompute.uarches.AMDRDNA5
+                lblStep2d.Text = "Step 2:  Enter number of CUs"
+            Case 8
+                currentUarch = CalcCompute.uarches.IntelAlchemist
+                lblStep2d.Text = "Step 2:  Enter number of Xe Cores"
+            Case 9
+                currentUarch = CalcCompute.uarches.IntelBattlemage
+                lblStep2d.Text = "Step 2:  Enter number of Xe Cores"
+            Case 10
+                currentUarch = CalcCompute.uarches.IntelCelestial
+                lblStep2d.Text = "Step 2:  Enter number of Xe Cores"
+            Case 11
+                currentUarch = CalcCompute.uarches.IntelDruid
+                lblStep2d.Text = "Step 2:  Enter number of Xe Cores"
+        End Select
+
+        lblGRayBox.Text = CalcCompute.calcRayBoxMetrics(currentUarch, nudComputeUnitsd.Value, tbClockSpeedd.Value) & " GRayBox"
+        lblGRayTri.Text = CalcCompute.calcRayTriMetrics(currentUarch, nudComputeUnitsd.Value, tbClockSpeedd.Value) & " GRayTri"
+        lblRayPerCycle.Text = "Per Cycle:  " & CalcCompute.getRayBoxForUarch(currentUarch) & ", " & CalcCompute.getRayTriForUarch(currentUarch)
+        Dim isSW As Integer = CalcCompute.getTraverseCyclesForUarch(currentUarch)
+        If Not isSW = -1 Then
+            lblBVHCycles.Text = "Cycles per BVH Traverse:  " & isSW
+        Else
+            lblBVHCycles.Text = "Software BVH Traverse"
+        End If
+
+    End Sub
+
+    Private Sub nudComputeUnitsd_ValueChanged(sender As Object, e As EventArgs) Handles nudComputeUnitsd.ValueChanged
+        lblGRayBox.Text = CalcCompute.calcRayBoxMetrics(currentUarch, nudComputeUnitsd.Value, tbClockSpeedd.Value) & " GRayBox"
+        lblGRayTri.Text = CalcCompute.calcRayTriMetrics(currentUarch, nudComputeUnitsd.Value, tbClockSpeedd.Value) & " GRayTri"
+        lblRayPerCycle.Text = "Per Cycle:  " & CalcCompute.getRayBoxForUarch(currentUarch) & ", " & CalcCompute.getRayTriForUarch(currentUarch)
+        Dim isSW As Integer = CalcCompute.getTraverseCyclesForUarch(currentUarch)
+        If Not isSW = -1 Then
+            lblBVHCycles.Text = "Cycles per BVH Traverse:  " & isSW
+        Else
+            lblBVHCycles.Text = "Software BVH Traverse"
+        End If
+    End Sub
+
+    Private Sub tdClockSpeedd_Scroll(sender As Object, e As EventArgs) Handles tbClockSpeedd.Scroll
+        lblClockd.Text = "Clock Speed:  " & tbClockSpeedd.Value & " MHz"
+        lblGRayBox.Text = CalcCompute.calcRayBoxMetrics(currentUarch, nudComputeUnitsd.Value, tbClockSpeedd.Value) & " GRayBox"
+        lblGRayTri.Text = CalcCompute.calcRayTriMetrics(currentUarch, nudComputeUnitsd.Value, tbClockSpeedd.Value) & " GRayTri"
+        lblRayPerCycle.Text = "Per Cycle:  " & CalcCompute.getRayBoxForUarch(currentUarch) & ", " & CalcCompute.getRayTriForUarch(currentUarch)
+        Dim isSW As Integer = CalcCompute.getTraverseCyclesForUarch(currentUarch)
+        If Not isSW = -1 Then
+            lblBVHCycles.Text = "Cycles per BVH Traverse " & isSW
+        Else
+            lblBVHCycles.Text = "Software BVH Traverse"
         End If
     End Sub
 End Class
